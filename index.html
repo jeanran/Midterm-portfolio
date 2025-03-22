@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sidebar Menu</title>
+
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- Sidebar  -->
+<div class="sidebar" id="mySidebar">
+    <button class="close-btn" onclick="closeSidebar()">×</button>
+    <a href="#"><i class="fa fa-home"></i><p>HOME</p></a>
+    <a href="#about"><i class="fa fa-user"></i><p>ABOUT</p></a>
+    <a href="#contact"><i class="fa fa-envelope"></i><p>CONTACT</p></a>
+   
+</div>
+
+<!-- Main Content -->
+<div class="main-content" id="main">
+
+    <!-- Top Nav -->
+    <div class="top-nav">
+        <button class="menu-btn" id="openNav" onclick="openSidebar()">☰</button>
+        <h1>My Portfolio</h1>
+    </div>
+
+    <!-- Img & Content -->
+    <img src="" alt="Car" style="width:100%">
+
+    <div class="content">
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+
+</div>
+
+
+<script>
+function openSidebar() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("openNav").style.display = "none";
+}
+
+function closeSidebar() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+/* Sidebar styles */
+.sidebar {
+    height: 100%;
+    width: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+/* Sidebar menus*/
+.sidebar a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+/* Close */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 36px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Top Navbar */
+.top-nav {
+    background-color: #008080;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.top-nav h1 {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+/* Ham Menu Button */
+.menu-btn {
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+    transition: margin-left 0.5s;
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .sidebar { width: 0; }
+    .main-content { margin-left: 0; }
+}
