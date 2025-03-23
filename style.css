@@ -3,7 +3,7 @@ body {
 
     margin: 0;
     padding: 0;
-    background-color: #f1f1f1;
+    background-color: #18230F;
 }
 
 
@@ -13,7 +13,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #27391C;
     overflow-x: hidden;
     transition: 0.5s;
     display: flex;
@@ -69,20 +69,13 @@ body {
 
 .top-nav {
     overflow: hidden;
-    background-color: #008080;
     padding: 30px ;
-    color: white;
     display: flex;
     align-items: center;
     width: 100vw; 
+    background-color: #27391C;;
     
     
-}
-
-.top-nav h1 {
-    margin: 0;
-    margin-left: 30px;
-    font-size: 30px;
 }
 
 
@@ -95,8 +88,8 @@ body {
     border: none;
     cursor: pointer;
     position: absolute;
-    top: 15px; 
-    left: 15px; 
+    top: 20px; 
+    left: 30px; 
     
 }
 
@@ -138,7 +131,7 @@ body {
     background-size: cover; 
     background-position: center; 
     width: 100vw; 
-    height: 100vh; 
+    height: auto; 
     overflow: hidden; 
 }
 
@@ -162,9 +155,37 @@ body {
     width: 100%;
     max-width: 992px;
     height: auto;
+    margin-top: 20px;
 }
 
 /* About Section */
+
+/* About Section */
+.title-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* Large Background Text */
+.title-background {
+    font-size: 4rem; /* Adjust as needed */
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.151);
+    -webkit-text-stroke: 1px #dee2e6; /* Outline effect */
+}
+
+/* Foreground Title */
+.title-foreground {
+    position: absolute;
+    text-transform: uppercase;
+    color: rgb(222, 224, 93); /* Primary color */
+    font-size: 1.5rem; /* Adjust to match design */
+    font-family: serif;
+}
+
 .about-section {
     color: grey;
     padding: 64px;
@@ -189,21 +210,14 @@ body {
     margin-bottom: 10px;
 }
 
-/* Skills Bar Colors */
-.skill-photography {
-    width: 95%;
-    background-color: darkgrey;
-}
+
 
 .skill-webdesign {
     width: 85%;
     background-color: darkgrey;
 }
 
-.skill-photoshop {
-    width: 80%;
-    background-color: darkgrey;
-}
+
 
 /* Portfolio Section */
 .portfolio-section {
@@ -224,38 +238,92 @@ body {
     margin-bottom: 12px;
 }
 
+
+
+
+
 /* Contact Section */
+.contacttitle-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* Large Background Text */
+.contacttitle-background {
+    font-size: 4rem; /* Adjust as needed */
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.151);
+    -webkit-text-stroke: 1px #dee2e6; /* Outline effect */
+}
+
+/* Foreground Title */
+.contacttitle-foreground {
+    position: absolute;
+    text-transform: uppercase;
+    color: rgb(222, 224, 93); /* Primary color */
+    font-size: 1.5rem; /* Adjust to match design */
+    font-family: serif;
+}
+
+
 .contact-section {
-    color: grey;
-    padding: 64px;
+    color: #555;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.contact-section h2 {
-    color: lightgrey;
+/* Bordered Form */
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.13);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
 }
 
-.contact-section hr {
-    width: 200px;
-    opacity: 0.6;
+.contact-form p {
+    margin-bottom: 15px;
 }
 
 .contact-form input {
     width: 100%;
-    padding: 16px;
-    margin-bottom: 10px;
-    border: none;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
 }
 
+.contact-form input:focus {
+    border-color: #155729;
+}
+
+/* Button Styling */
 .contact-form button {
-    background-color: lightgrey;
-    padding: 16px;
+    width: 50%;
+    background-color: #27391C;
+    color: white;
+    padding: 14px;
     border: none;
     font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
 }
 
 .contact-form button:hover {
-    background-color: grey;
+    background-color: #0fa541;
 }
+
 
 /* Footer */
 .footer {
