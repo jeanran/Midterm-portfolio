@@ -1,43 +1,62 @@
-
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
     margin: 0;
     padding: 0;
     background-color: #f1f1f1;
 }
 
-/* Sidebar styles */
+
 .sidebar {
     height: 100%;
-    width: 120px;
+    width: 80px; 
     position: fixed;
     top: 0;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 60px;
 }
 
-/* Sidebar menus*/
 .sidebar a {
-    padding: 15px;
-    text-decoration: none;
-    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none; 
+    padding: 15px 0; 
     color: white;
-    display: block;
-    transition: 0.3s;
+}
+
+.sidebar a i {
+    font-size: 30px; /* Increase icon size */
+    color: white; 
 }
 
 .sidebar a:hover {
     background-color: #575757;
 }
 
-/* Close */
+
+.sidebar a.active {
+    background-color: #ccc; 
+}
+
+/* Adjusting icon spacing */
+.sidebar a i {
+    margin-bottom: 5px;
+}
+
+/* Close button */
 .close-btn {
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: 5px;
+    right: 8px;
     font-size: 36px;
     color: white;
     background: none;
@@ -46,37 +65,211 @@ body {
 }
 
 /* Top Navbar */
+
+
 .top-nav {
+    overflow: hidden;
     background-color: #008080;
-    padding: 10px 20px;
+    padding: 30px ;
     color: white;
     display: flex;
     align-items: center;
+    width: 100vw; 
+    
+    
 }
 
 .top-nav h1 {
     margin: 0;
-    margin-left: 10px;
-    font-size: 24px;
+    margin-left: 30px;
+    font-size: 30px;
 }
 
-/* Ham Menu Button */
+
+
+/* Hamburger Menu Button */
 .menu-btn {
-    font-size: 24px;
+    font-size: 28px;
     color: white;
     background: none;
     border: none;
     cursor: pointer;
+    position: absolute;
+    top: 15px; 
+    left: 15px; 
+    
 }
+
+/* Hover Effect */
+.menu-btn:hover {
+    color: #ccc; 
+}
+
 
 /* Main Content */
 .main-content {
     transition: margin-left 0.5s;
-    padding: 20px;
+    padding: 10px;
 }
-
 
 @media screen and (max-width: 600px) {
     .sidebar { width: 0; }
-    .main-content { margin-left: 0; }
+    .main-content { margin-left: 20px; }
 }
+
+
+
+
+/* Header Section */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-container {
+    font-style: normal;
+    font-family: cursive;
+
+    text-align: center;
+    background-image: url("green_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    width: 100vw; 
+    height: 100vh; 
+    overflow: hidden; 
+}
+
+    
+   
+.header-container h1 {
+    margin-top: 80px;
+    font-size: 3rem;
+    color: white;
+    font-family: "Montserrat";
+    font-style: normal;
+}
+
+.header-container p {
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 20px;
+}
+
+.header-container img {
+    width: 100%;
+    max-width: 992px;
+    height: auto;
+}
+
+/* About Section */
+.about-section {
+    color: grey;
+    padding: 64px;
+}
+
+.about-section h2,
+.about-section h3 {
+    color: lightgrey;
+}
+
+.about-section hr {
+    width: 200px;
+    opacity: 0.6;
+}
+
+.skill-bar {
+    height: 24px;
+}
+
+.skill-container {
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+/* Skills Bar Colors */
+.skill-photography {
+    width: 95%;
+    background-color: darkgrey;
+}
+
+.skill-webdesign {
+    width: 85%;
+    background-color: darkgrey;
+}
+
+.skill-photoshop {
+    width: 80%;
+    background-color: darkgrey;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 64px;
+}
+
+.portfolio-section h2 {
+    color: lightgrey;
+}
+
+.portfolio-section hr {
+    width: 200px;
+    opacity: 0.6;
+}
+
+.portfolio-images img {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+/* Contact Section */
+.contact-section {
+    color: grey;
+    padding: 64px;
+}
+
+.contact-section h2 {
+    color: lightgrey;
+}
+
+.contact-section hr {
+    width: 200px;
+    opacity: 0.6;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.contact-form button {
+    background-color: lightgrey;
+    padding: 16px;
+    border: none;
+    font-size: 1rem;
+}
+
+.contact-form button:hover {
+    background-color: grey;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 64px;
+    font-size: 1.5rem;
+}
+
+.footer i {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.footer i:hover {
+    opacity: 0.6;
+}
+
