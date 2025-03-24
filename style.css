@@ -146,9 +146,33 @@ body {
 }
 
 .header-container p {
-    font-size: 1.2rem;
-    color: white;
-    margin-top: 20px;
+    font-size: 1.2rem !important;
+    font-weight: lighter !important;
+    color: white !important;
+    margin-top: 20px !important;
+    animation-delay: 1.2s;
+
+}
+
+span {
+    color: yellow;
+}
+
+.animation {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.header-container img.animation {
+    animation-delay: 1.5s;
 }
 
 .header-container img {
@@ -156,6 +180,7 @@ body {
     max-width: 992px;
     height: auto;
     margin-top: 20px;
+    
 }
 
 /* About Section */
