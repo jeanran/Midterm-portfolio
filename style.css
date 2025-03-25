@@ -93,13 +93,12 @@ body {
     
 }
 
-/* Hover Effect */
 .menu-btn:hover {
     color: #ccc; 
 }
 
 
-/* Main Content */
+
 .main-content {
     transition: margin-left 0.5s;
     padding: 10px;
@@ -123,8 +122,6 @@ body {
 
 .header-container {
     font-style: normal;
-    font-family: cursive;
-
     text-align: center;
     background-image: url("green_img.jpg");
     background-repeat: no-repeat;
@@ -146,10 +143,10 @@ body {
 }
 
 .header-container p {
-    font-size: 1.2rem !important;
-    font-weight: lighter !important;
-    color: white !important;
-    margin-top: 20px !important;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    color: white;
+    margin-top: 20px ;
     animation-delay: 1.2s;
 
 }
@@ -182,6 +179,28 @@ span {
     margin-top: 20px;
     
 }
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 64px;
+}
+
+.portfolio-section h2 {
+    color: lightgrey;
+}
+
+.portfolio-section hr {
+    width: 200px;
+    opacity: 0.6;
+}
+
+.portfolio-images img {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+
+
 
 
 
@@ -234,12 +253,14 @@ span {
     padding: 64px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: left;
+    align-items: center;
 }
 
 .about-section h2 {
     color: lightgrey;
+    text-align: left;
+    
 }
 
 .about-section hr {
@@ -249,20 +270,24 @@ span {
 
 .about-section p {
     font-size: 18px;
+    align-items: center;
+    text-align: left;
     
 }
 
 .info-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(2, 0.8fr);
+    gap: 10px;
     margin-top: 20px;
-    justify-content: left;
+    justify-content: center;
     text-align: left;
+    align-items: center;
 }
 .info-grid div {
     font-size: 14px;
     color: rgb(222, 224, 93);
+    
 }
 .info-grid strong {
     color: white;
@@ -296,6 +321,8 @@ span {
     font-family: serif;
     margin-top: 5px
 }
+
+
 
 
 .skills {
@@ -360,29 +387,6 @@ span {
 
 
 
-/* Portfolio Section */
-.portfolio-section {
-    padding: 64px;
-}
-
-.portfolio-section h2 {
-    color: lightgrey;
-}
-
-.portfolio-section hr {
-    width: 200px;
-    opacity: 0.6;
-}
-
-.portfolio-images img {
-    width: 100%;
-    margin-bottom: 12px;
-}
-
-
-
-
-
 /* Contact Section */
 .contacttitle-container {
     position: relative;
@@ -432,6 +436,19 @@ span {
 .contact-form p {
     margin-bottom: 15px;
 }
+.message_box {
+    width: 100%;
+    height: 80px; 
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+    resize: vertical; 
+}
+
+
 
 .contact-form input {
     width: 100%;
@@ -446,27 +463,40 @@ span {
 .contact-form input:focus {
     border-color: #155729;
 }
-
-
 .contact-form button {
-    width: 50%;
-    background-color: #27391C;
+    width: auto; 
+    min-width: 150px; 
+    background-color: #27391c21;
     color: white;
-    padding: 14px;
-    border: none;
+    border: 1px solid #ccc;
+    padding: 14px 30px; 
     font-size: 1rem;
-    border-radius: 5px;
+    border-radius: 50px; 
     cursor: pointer;
     transition: 0.3s;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    text-align: center;
 }
 
+
 .contact-form button:hover {
-    background-color: #0fa541;
+    background-color: rgb(70, 92, 42);
 }
 
 
 /* Footer */
+
+.footer-text {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+    opacity: 0.7;
+}
+
 .footer {
     text-align: center;
     padding: 64px;
@@ -476,9 +506,19 @@ span {
 .footer i {
     margin: 10px;
     cursor: pointer;
+    color: white;
 }
 
 .footer i:hover {
     opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+    .footer-text {
+        font-size: 12px;
+    }
+    .contact-form button {
+        width: 100%; 
+    }
 }
 
